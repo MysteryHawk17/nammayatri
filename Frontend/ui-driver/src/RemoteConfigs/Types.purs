@@ -160,3 +160,15 @@ type RideEndAudioConfig = {
   enableRideEndAudio :: Boolean
 , rideEndAudioUrl :: Maybe String
 }
+
+type VoipConfig = {
+  customer :: {
+    enableVoipFeature :: Boolean,
+    enableVoipCalling :: Boolean
+  },
+  driver :: {
+    enableVoipFeature :: Boolean,
+    enableVoipCalling :: Boolean
+  }
+}
+

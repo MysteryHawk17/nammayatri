@@ -185,3 +185,14 @@ type CancellationThreshold = {
   showBanner :: Boolean,
   percentage :: Number
 }
+
+type VoipConfig = {
+  customer :: {
+    enableVoipFeature :: Boolean,
+    enableVoipCalling :: Boolean
+  },
+  driver :: {
+    enableVoipFeature :: Boolean,
+    enableVoipCalling :: Boolean
+  }
+}
