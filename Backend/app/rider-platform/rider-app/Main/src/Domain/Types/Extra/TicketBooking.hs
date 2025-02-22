@@ -13,7 +13,7 @@ import qualified Tools.Beam.UtilsTH
 allTicketBookingStatus :: [BookingStatus]
 allTicketBookingStatus = [minBound .. maxBound]
 
-data BookingStatus = Pending | Failed | Booked | Cancelled deriving (Eq, Ord, Show, Read, Enum, Bounded, Generic, ToJSON, FromJSON)
+data BookingStatus = Pending | Failed | Booked | Cancelled | RefundPending | RefundInitiated | RefundFailed | Refunded deriving (Eq, Ord, Show, Read, Enum, Bounded, Generic, ToJSON, FromJSON)
 
 instance ToSchema BookingStatus where
   declareNamedSchema proxy = do

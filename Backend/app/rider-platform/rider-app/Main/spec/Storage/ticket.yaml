@@ -336,6 +336,7 @@ TicketBooking:
     bookedSeats: Int
     cancelledSeats: Maybe Int
     vendorSplitDetails: "Maybe [VendorSplitDetails]"
+    blockExpirationTime: Maybe Double
 
   beamType:
     vendorSplitDetails: Maybe Value
